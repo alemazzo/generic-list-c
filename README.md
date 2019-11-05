@@ -2,7 +2,7 @@
 Lista di tipo generico in C
 ---------------------------
 Per l'inserimento bisogna passare come argomento un puntatore a void che punta all'elemento da inserire :
-
+---------------------------
   LIST list = List(); //Iniziallizazione lista.
   
   int a = 100, b = 200;
@@ -23,12 +23,12 @@ Per l'inserimento bisogna passare come argomento un puntatore a void che punta a
   
   list.insert(&list, ptr);
   
-  
+-------------------------------------------------------------------
 Per estrarre un elemento bisogna convertirlo con le marco integrate:
   - TO_INT()
   - TO_CHAR()
   - TO_STRING()
-  
+-------------------------------------------------------------------
   int a = TO_INT(list.getElement(&list, 0));
   
   char c = TO_CHAR(list.getElement(&list, 1));
